@@ -1,0 +1,96 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  background: url(background.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* NAV */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.nav-div {
+  background-color: #111414;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  font-size: 1em;
+  margin: 0;
+}
+.push {
+  margin-left: auto;
+}
+
+li {
+  padding: 20px;
+}
+li:hover {
+  background-color: rgb(92, 199, 140);
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cover {
+  display: flex;
+  height: 65vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  margin-top: 60px;
+}
+
+video {
+  max-width: 80vmax;
+  min-width: 30vmin;
+  max-height: 60vh;
+}
+
+h2 {
+  font-size: 3rem;
+  color: white;
+}
+
+.container {
+  margin: auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: start;
+}
+
+.images {
+  margin: 20px;
+  transition: all 1s;
+}
+
+.images:hover {
+  transform: scale(1.2);
+}
+
+img {
+  background-size: cover;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+footer {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
